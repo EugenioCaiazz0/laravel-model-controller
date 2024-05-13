@@ -14,15 +14,16 @@
                 <th scope="col"> Date </th>
                 <th scope="col"> Rating </th>
         </thead>
+
         <tbody>
             @foreach ($movies as $movie)
             <tr>
-                <td> {{ $movies->id}} </td>
-                <td> {{ $movies->title}} </td>
-                <td> {{ $movies->original_title}} </td>
-                <td> {{ $movies->nationality}} </td>
-                <td> {{ $movies->date}} </td>
-                <td> {{ $movies->vote}} </td>
+                <td> {{ $movie->id}} </td>
+                <td> {{ $movie->title}} </td>
+                <td> {{ $movie->original_title}} </td>
+                <td> {{ $movie->nationality}} </td>
+                <td> {{ $movie->date}} </td>
+                <td> {{ $movie->vote}} </td>
             </tr>
             @endforeach
         </tbody>
